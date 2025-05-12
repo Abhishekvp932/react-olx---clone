@@ -195,7 +195,7 @@
 
 .logout-dropdown {
   display: none;
-  position: absolute;
+  position: static;
   top: 25px;
   right: 0;
   background-color: white;
@@ -213,4 +213,7 @@
   border: none;
   color: red;
   cursor: pointer;
+}
+.sell{
+  text-decoration: none;
 }

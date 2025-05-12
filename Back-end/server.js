@@ -11,7 +11,7 @@ app.use(cors({
 }))
 
 app.use (bodyParser.json())
-
+app.use('/uploads', express.static('uploads'));
 app.use('/api/auth',dataRouter)
 DB()
 app.listen(2323,()=>{

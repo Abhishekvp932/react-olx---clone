@@ -21,6 +21,9 @@ function Navbar() {
         setUserName('');
         navigate('/login');
     }
+    const addProducts = ()=>{
+      navigate('/addProducts')
+    }
   return (
     <>
       <nav className="navbar">
@@ -64,7 +67,7 @@ function Navbar() {
             </div>
             <div className="nav-item sell-button">
               <i className="nav-icon">➕</i>
-              SELL
+              <a href="" className='sell' onClick={addProducts}>SELL</a>
             </div>
           </div>
         </div>
